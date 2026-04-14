@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUP Law 11th Batch | Bangladesh University of Professionals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --primary: #0A2540;
+            --accent: #C5A05B;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0A2540 0%, #1E3A5F 100%);
+        }
+        
+        .navbar {
+            backdrop-filter: blur(16px);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 25px 25px 50px -12px rgb(10 37 64 / 0.25);
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 3px;
+            background: #C5A05B;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .student-card {
+            background: rgba(255,255,255,0.95);
+            border: 1px solid rgba(197, 160, 91, 0.2);
+            box-shadow: 0 10px 15px -3px rgb(10 37 64 / 0.1);
+        }
+        
+        .dark-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 160, 91, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="navbar bg-[#0A2540]/95 border-b border-[#C5A05B]/30 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-[#C5A05B] rounded-3xl flex items-center justify-center text-3xl shadow-inner ring-2 ring-white/30">⚖️</div>
+                <div>
+                    <h1 class="heading-font text-3xl font-bold text-white tracking-[-1px]">BUP LAW</h1>
+                    <p class="text-[#C5A05B] text-sm -mt-1 font-medium">11TH BATCH • DEPARTMENT OF LAW • 2026</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-white font-medium">
+                <a href="#home" class="hover:text-[#C5A05B]">Home</a>
+                <a href="#about" class="hover:text-[#C5A05B]">About</a>
+                <a href="#section-a" class="hover:text-[#C5A05B]">Section A</a>
+                <a href="#section-b" class="hover:text-[#C5A05B]">Section B</a>
+                <a href="#quotations" class="hover:text-[#C5A05B]">Legal Wisdom</a>
+            </div>
+            
+            <a href="https://bup.edu.bd" target="_blank" 
+               class="px-6 py-3 bg-[#C5A05B] hover:bg-white hover:text-[#0A2540] font-semibold rounded-3xl text-sm flex items-center gap-2">
+                <i class="fas fa-university"></i> OFFICIAL BUP
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center px-5 py-2 bg-white/10 text-white rounded-3xl border border-[#C5A05B]/30 text-sm font-medium">
+                    <span class="w-2 h-2 bg-[#C5A05B] rounded-full animate-pulse mr-2"></span>
+                    CLASS OF 2026 • BUP LAW
+                </div>
+                <h1 class="heading-font text-6xl md:text-7xl font-bold text-white leading-none tracking-[-2px]">
+                    BUP LAW<br>11TH BATCH
+                </h1>
+                <p class="text-2xl text-[#C5A05B] max-w-md">Forging Ethical Leaders for a Just Society</p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#section-a" class="px-8 py-4 bg-white text-[#0A2540] font-semibold rounded-3xl flex items-center gap-2 hover:shadow-xl">
+                        <i class="fas fa-users"></i> MEET SECTION A
+                    </a>
+                    <a href="#section-b" class="px-8 py-4 border-2 border-white text-white font-semibold rounded-3xl hover:bg-white hover:text-[#0A2540]">
+                        MEET SECTION B
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex justify-center">
+                <div class="text-[180px] leading-none opacity-90 animate-float">⚖️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-bold text-[#0A2540]">Department of Law</h2>
+            <p class="mt-3 text-xl text-gray-600">Bangladesh University of Professionals • 11th Batch</p>
+            <div class="max-w-2xl mx-auto mt-8 text-gray-600 leading-relaxed">
+                Professional legal education with a focus on academic excellence, mooting, research and ethical practice.
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION A -->
+    <section id="section-a" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-12">
+                <div>
+                    <span class="bg-[#0A2540] text-white px-6 py-2 rounded-3xl text-sm font-semibold tracking-widest">SECTION A</span>
+                    <h2 class="heading-font text-5xl font-bold text-[#0A2540] mt-3">The Visionaries</h2>
+                    <p class="text-gray-600 mt-2">Professional profile cards of every student in Section A</p>
+                </div>
+                <p class="text-right max-w-xs text-sm text-gray-500">Designed by Akib Al Azad</p>
+            </div>
+
+            <!-- Standing Group -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3 text-[#0A2540]">
+                    <i class="fas fa-users text-[#C5A05B]"></i>
+                    STANDING (Right to Left)
+                </h3>
+                <div id="standingGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Sitting Group -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3 text-[#0A2540]">
+                    <i class="fas fa-chair text-[#C5A05B]"></i>
+                    SITTING (Left to Right)
+                </h3>
+                <div id="sittingGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Additional Members -->
+            <div class="mt-16 bg-gray-50 rounded-3xl p-8">
+                <h3 class="text-xl font-semibold mb-6 flex items-center gap-3 text-[#0A2540]">
+                    <i class="fas fa-user-plus text-[#C5A05B]"></i>
+                    ADDITIONAL MEMBERS
+                </h3>
+                <div id="additionalGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-700 font-medium">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION B -->
+    <section id="section-b" class="py-20 bg-[#0A2540] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-12">
+                <div>
+                    <span class="bg-[#C5A05B] text-[#0A2540] px-6 py-2 rounded-3xl text-sm font-semibold tracking-widest">SECTION B</span>
+                    <h2 class="heading-font text-5xl font-bold text-white mt-3">The Guardians of Justice</h2>
+                    <p class="text-[#C5A05B] mt-2">54 Brilliant Future Legal Professionals</p>
+                </div>
+            </div>
+            
+            <div id="sectionBGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotations -->
+    <section id="quotations" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-bold text-[#0A2540] mb-16">Legal Wisdom</h2>
+            
+            <div class="space-y-16">
+                <div>
+                    <p class="text-3xl italic text-gray-700">"The end of law is not to abolish or restrain, but to preserve and enlarge freedom."</p>
+                    <p class="mt-8 text-[#C5A05B] font-semibold">— John Locke</p>
+                </div>
+                <div>
+                    <p class="text-3xl italic text-gray-700">"Justice is the constant and perpetual will to render to every man his due."</p>
+                    <p class="mt-8 text-[#C5A05B] font-semibold">— Justinian I</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A2540] text-white/70 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-lg">Department of Law • Bangladesh University of Professionals</p>
+            <p class="mt-2 text-sm">BUP Law 11th Batch © 2026 • Designed by Akib Al Azad</p>
+            <p class="text-xs mt-8 text-[#C5A05B]">Professional • Modern • Animated</p>
+        </div>
+    </footer>
+
+    <script>
+        // ====================== SECTION A DATA (UPDATED NAMES) ======================
+        const standingStudents = [
+            "Akib",     // Changed from Faiyaz
+            "Shuvo",
+            "Jihad",
+            "Daiyan",
+            "Siyam",
+            "Abonto",
+            "Nazia",
+            "Meem",
+            "Urmy",
+            "Irtiza",
+            "Mazuza",
+            "Jessica",
+            "Nowrin",
+            "Shoshi",
+            "Labiba (left)",
+            "Bristy",
+            "Rubaiya",
+            "Humayra",
+            "Khatija",
+            "Khadija",
+            "Nafiza",
+            "Konika",
+            "Ayesha (left)",
+            "Ilma",
+            "Tabassum",
+            "Shereya",
+            "Adrita",
+            "Samiha",
+            "Sinha",
+            "Habiba",
+            "Arifin"
+        ];
+
+        const sittingStudents = [
+            "Adnan","Hridoy","Rouf","Rafid","Riyad","Likhon","Rafii","Rezowan",
+            "Arman (lilbro)","Rabbi","Akib","Fahim","Plabon"
+        ];
+
+        const additionalStudents = [
+            "Sadia","Nazia","Meem","Jawad","Siyam","Shreya","Shabnaj","Sinha","Saima"
+        ];
+
+        // ====================== SECTION B DATA ======================
+        const sectionBStudents = [
+            {sl:1, roll:"25429510018", name:"MD. ABU RAYHAN"},
+            {sl:2, roll:"25429510034", name:"KABERI HALDER"},
+            {sl:3, roll:"26429511006", name:"TASPIA BINTI ISLAM PRIONTY"},
+            {sl:4, roll:"26429511008", name:"TASFIA ZAMAN"},
+            {sl:5, roll:"26429511010", name:"MD. SHAH RIYER RAJ"},
+            {sl:6, roll:"26429511014", name:"EKRAMUL HUQ ISHMAM"},
+            {sl:7, roll:"26429511016", name:"ZARIN SABAH"},
+            {sl:8, roll:"26429511018", name:"SHADMAN REZOWAN"},
+            {sl:9, roll:"26429511020", name:"TABASSUM KADER MYSHA"},
+            {sl:10, roll:"26429511022", name:"SARA AKBAR"},
+            {sl:11, roll:"26429511024", name:"MOSFIK ZAMAN MIAH"},
+            {sl:12, roll:"26429511026", name:"MD. MAHMUDUL HASAN"},
+            {sl:13, roll:"26429511028", name:"TAHMIDA SANJIM"},
+            {sl:14, roll:"26429511030", name:"MD. TAWFIQUR RAHMAN TALHA"},
+            {sl:15, roll:"26429511034", name:"SHEIKH RIFAT"},
+            {sl:16, roll:"26429511036", name:"MD. ABIR CHOWDHURY RAFIU"},
+            {sl:17, roll:"26429511038", name:"ANJUMAN FERDOUSI TASFIA"},
+            {sl:18, roll:"26429511040", name:"IMTIAZ UDDIN AHMED CHOWDHURY"},
+            {sl:19, roll:"26429511042", name:"TAMASSUM TAHARAT"},
+            {sl:20, roll:"26429511044", name:"MST. FATEMA JANNAT MAHI"},
+            {sl:21, roll:"26429511048", name:"JARIF AL ARAF"},
+            {sl:22, roll:"26429511050", name:"SIMU AKTER"},
+            {sl:23, roll:"26429511052", name:"SAYED MOHAMMED NAIMUR RAHMAN"},
+            {sl:24, roll:"26429511054", name:"MD. AKIBUL HASAN"},
+            {sl:25, roll:"26429511056", name:"TASMIM ALAM OTHOY"},
+            {sl:26, roll:"26429511058", name:"KHALID BIN HOSSAIN"},
+            {sl:27, roll:"26429511060", name:"TAHSIN MOHAMMAD DIP"},
+            {sl:28, roll:"26429511062", name:"MD. RIYAZ RABBI KALLOL"},
+            {sl:29, roll:"26429511064", name:"TAYEBA TABASSUM"},
+            {sl:30, roll:"26429511066", name:"ANGELINA CHING CHING"},
+            {sl:31, roll:"26429511068", name:"MD. SHAHIN ALAM"},
+            {sl:32, roll:"26429511070", name:"MD. JUBAYER SADIK"},
+            {sl:33, roll:"26429511072", name:"SARA ANOWAR SIDDIKA"},
+            {sl:34, roll:"26429511074", name:"TASHFIA NOOR DISHI"},
+            {sl:35, roll:"26429511076", name:"SYEDA SADIA TASNIM"},
+            {sl:36, roll:"26429511078", name:"MD. MUNTASHEER MAHMUD MURAD"},
+            {sl:37, roll:"26429511080", name:"MAHZUJA MAHIRA"},
+            {sl:38, roll:"26429511082", name:"AFIA JAHAN OYSHEE"},
+            {sl:39, roll:"26429511084", name:"AFIA FARZANA JHUMA"},
+            {sl:40, roll:"26429511086", name:"MST. NAURIN AZAD ATHAY"},
+            {sl:41, roll:"26429511088", name:"NISHAT TASNIM"},
+            {sl:42, roll:"26429511090", name:"FAHMI FAIROOZ"},
+            {sl:43, roll:"26429511092", name:"SADIA ISLAM SHANTA"},
+            {sl:44, roll:"26429511094", name:"METHILA FARJANA DOLA"},
+            {sl:45, roll:"26429511096", name:"SABIKUN NAHAR"},
+            {sl:46, roll:"26429511098", name:"RUPREKHA TASMI ESHA"},
+            {sl:47, roll:"26429511102", name:"MAHMUDUL HASAN DIP"},
+            {sl:48, roll:"26429511104", name:"RIFAT UL ALAM"},
+            {sl:49, roll:"26429511106", name:"SHAMIA SHIRIN SHILA"},
+            {sl:50, roll:"26429511108", name:"MD. ABDULLAH AL NOMAN SARKAR"},
+            {sl:51, roll:"26429511110", name:"ZANNATUL FERDOWS HANIFA"},
+            {sl:52, roll:"26429511114", name:"MD. NAYEM HASAN MARUF"},
+            {sl:53, roll:"26429511116", name:"MD. SHAMSUDDIN AHMED"},
+            {sl:54, roll:"26429511118", name:"SHANJANA AFROJA MITHI"}
+        ];
+
+        // ====================== RENDER FUNCTIONS ======================
+        function createCard(name, type = "student") {
+            const card = document.createElement('div');
+            card.className = `card-hover rounded-3xl p-6 ${type === 'b' ? 'dark-card text-white' : 'student-card text-[#0A2540]'}`;
+            
+            card.innerHTML = `
+                <div class="flex justify-between items-start">
+                    <div class="text-xs font-medium bg-[#C5A05B]/10 text-[#C5A05B] px-4 py-1 rounded-3xl">${type}</div>
+                </div>
+                <h4 class="mt-6 text-2xl font-semibold leading-tight">${name}</h4>
+                <div class="mt-8 text-xs flex items-center text-gray-500">
+                    <i class="fas fa-graduation-cap mr-2"></i>
+                    BUP LAW 11TH BATCH
+                </div>
+            `;
+            return card;
+        }
+
+        // Render Section A Standing (with name swap applied)
+        const standingGrid = document.getElementById('standingGrid');
+        standingStudents.forEach(name => {
+            standingGrid.appendChild(createCard(name, "Standing"));
+        });
+
+        // Render Section A Sitting
+        const sittingGrid = document.getElementById('sittingGrid');
+        sittingStudents.forEach(name => {
+            sittingGrid.appendChild(createCard(name, "Sitting"));
+        });
+
+        // Render Additional Members
+        const additionalGrid = document.getElementById('additionalGrid');
+        additionalStudents.forEach(name => {
+            const div = document.createElement('div');
+            div.className = "bg-white rounded-2xl px-5 py-4 text-center font-medium shadow-sm border border-[#C5A05B]/10";
+            div.textContent = name;
+            additionalGrid.appendChild(div);
+        });
+
+        // Render Section B
+        const sectionBGrid = document.getElementById('sectionBGrid');
+        sectionBStudents.forEach(student => {
+            const card = document.createElement('div');
+            card.className = `card-hover dark-card rounded-3xl p-6 text-white`;
+            card.innerHTML = `
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs bg-white/20 px-3 py-1 rounded-3xl">${student.sl}</span>
+                    <span class="text-[#C5A05B] text-sm font-mono">${student.roll}</span>
+                </div>
+                <h4 class="text-2xl font-semibold leading-tight">${student.name}</h4>
+                <div class="mt-8 text-xs flex items-center gap-2 text-white/70">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>BUP LAW 11TH BATCH</span>
+                </div>
+            `;
+            sectionBGrid.appendChild(card);
+        });
+
+        console.log('%c✅ BUP Law 11th Batch Website Updated! Names swapped (Faiyaz → Akib) & Designed by Akib Al Azad', 'background:#C5A05B;color:#0A2540;padding:4px 8px;border-radius:6px;font-weight:bold');
+    </script>
+</body>
+</html>
